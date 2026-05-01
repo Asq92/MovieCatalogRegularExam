@@ -1,0 +1,77 @@
+{
+  "info": {
+    "_postman_id": "4c7cbe16-1331-4647-a827-1f1189c0f9d6",
+    "name": "Movie_Catalog2026",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44049896",
+    "_collection_link": "https://go.postman.co/collection/44049896-4c7cbe16-1331-4647-a827-1f1189c0f9d6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userName\": \"QAsoftuni92\",\r\n    \"firstName\": \"QA92\",\r\n    \"lastName\": \"QA92\",\r\n    \"email\": \"QA92@example.com\",\r\n    \"password\": \"123456\",\r\n    \"rePassword\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/User/Register",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "User",
+            "Register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Auth",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"QA92@example.com\",\r\n    \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://144.91.123.158:5000/api/User/Authentication",
+          "protocol": "http",
+          "host": [
+            "144",
+            "91",
+            "123",
+            "158"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "User",
+            "Authentication"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
